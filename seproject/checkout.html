@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Checkout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../seproject/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="../seproject/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+	  background-color: #0066CC;
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+    }
+	label{
+		margin-bottom: 20px;
+	}
+	.sub{
+		margin-right: 20px;
+	}
+	.col-centered{
+		float: none;
+		margin: 0 auto;
+	}
+  </style>
+</head>
+<body>
+<!--this php section establishes a link to our database-->
+<!--<?php
+     /*$user = 'root';
+     $password = 'root';
+     $db = 'trans_path';
+     $host = 'localhost';
+     $port = 8889;
+
+     $link = mysqli_init();
+     $success = mysqli_real_connect(
+        $link, 
+        $host, 
+        $user, 
+        $password, 
+        $db,
+        $port
+     );*/
+?>-->
+<div class="jumbotron">
+  <div class="container-fluid text-center">
+    <h2><img src="../seproject/images/avlogo.png" alt="HTML5 Icon" style = "float:left"><font color = "white">Audio/Visual Services</font><img src="../seproject/images/mtsuwhite.png" alt="HTML5 Icon" style = "float:right"><br><font color="white">Equipment Checkout</font></h2>      
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="homepage.html">Home</a></li>
+        <li class="active"><a href="checkout.html">Checkout</a></li>
+        <li><a href="checkin.html">Checkin</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="dataadmin.html">Database Administration</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Checkout</div>
+        <div class="panel-body">
+			<form action="*****">
+			<ul>
+				<li><label>
+					Barcode: <input type="text" size="25" placeholder="Scan/Type Barcode" autofocus><br>
+				</label></li>
+				<li><label>
+					Item Name: <input type="text" size="25" readonly><br>
+				</label></li>
+				<li><label>
+					Due Date: <input type="text" size="25" readonly><br>
+				</label></li>
+				<li><label>
+					Customer Name: <input type="text" size="25" placeholder="Firstname Lastname" required><br>
+				</label></li>
+				<li><label>
+					Customer Email: <input type="email" size="25" placeholder="myemail@mtmail.mtsu.edu" required><br>
+				</label></li>
+				<li><label>
+					<input class="sub" type="submit" value="Submit">   <input type="reset" value="Reset Checkout Form">
+				</label></li>
+			</ul>
+			</form>
+		</div>
+      </div>
+    </div>
+    <div class="col-sm-5"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Checkout Procedure</div>
+        <div class="panel-body">
+		<ol>
+			<li>Inspect item for damage.</li>
+			<li>Ensure all pieces are accounted for.</li>
+			<li>Scan or type barcode information.</li>
+			<li>Enter customer information into the form.</li>
+			<li>Inform the customer of the due date.</li>
+			<li>Click submit to finalize checkout process.</li>
+		</ol>
+		</div>
+      </div>
+    </div>
+  </div><br>
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../seproject/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="../seproject/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+	  background-color: #0066CC;
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+<!--this php section establishes a link to our database-->
+<!--<?php
+     /*$user = 'root';
+     $password = 'root';
+     $db = 'trans_path';
+     $host = 'localhost';
+     $port = 8889;
+
+     $link = mysqli_init();
+     $success = mysqli_real_connect(
+        $link, 
+        $host, 
+        $user, 
+        $password, 
+        $db,
+        $port
+     );*/
+?>-->
+<div class="jumbotron">
+  <div class="container-fluid text-center">
+    <h2><img src="../seproject/images/avlogo.png" alt="HTML5 Icon" style = "float:left"><font color = "white">Audio/Visual Services</font><img src="../seproject/images/mtsuwhite.png" alt="HTML5 Icon" style = "float:right"><br><font color="white">Inventory Management System</font></h2>      
+    <!--<h2><font color="white">Inventory Management System</font></h2>-->
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="homepage.html">Home</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="checkin.html">Checkin</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="dataadmin.html">Database Administration</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container text-center">
+<p><font size="14">Staff Members</font></p>
+</div>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Jeff Nokes</div>
+        <div class="panel-body"><img src="../seproject/images/staff/jeff_nokes.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Director Of Engineering</div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Anthony Tate</div>
+        <div class="panel-body"><img src="../seproject/images/staff/anthony_tate.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Manager of CEM Computer Facilities</div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">James Preston</div>
+        <div class="panel-body"><img src="../seproject/images/staff/james_preston.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Media Engineer</div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Janet Dutton</div>
+        <div class="panel-body"><img src="../seproject/images/staff/janet_dutton.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Secretary</div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Jenny Marsh</div>
+        <div class="panel-body"><img src="../seproject/images/staff/jenny_marsh.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Technical Clerk</div>
+      </div>
+    </div>
+	<div class="col-sm-2"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">John Story</div>
+        <div class="panel-body"><img src="../seproject/images/staff/john_story.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Electronic Equipment Technician</div>
+      </div>
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="panel panel-primary text-center">
+        <div class="panel-heading text-center">Jon Jackson</div>
+        <div class="panel-body"><img src="../seproject/images/staff/jon_jackson.png" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Video Production Supervisor</div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="panel panel-primary" text-center>
+        <div class="panel-heading text-center">Laura Clark</div>
+        <div class="panel-body"><img src="../seproject/images/staff/laura_clark.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Director of CEM</div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Melbra Simmons</div>
+        <div class="panel-body"><img src="../seproject/images/staff/melbra_simmons.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Media Librarian</div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Mitch Pryor</div>
+        <div class="panel-body"><img src="../seproject/images/staff/mitch_pryor.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Director, TV and Video Production</div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Phil Shirley</div>
+        <div class="panel-body"><img src="../seproject/images/staff/phil_shirley.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Electronic Shop Supervisor</div>
+      </div>
+    </div>
+	<div class="col-sm-2"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Ronald Gilley</div>
+        <div class="panel-body"><img src="../seproject/images/staff/ronald_gilley.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Electronic Equipment Technician</div>
+      </div>
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="panel panel-primary text-center">
+        <div class="panel-heading text-center">Salley Rivera</div>
+        <div class="panel-body"><img src="../seproject/images/staff/salley_rivera.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Administrative Secretary</div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="panel panel-primary" text-center>
+        <div class="panel-heading text-center">Ty Whitaker</div>
+        <div class="panel-body"><img src="../seproject/images/staff/ty_whitaker.jpg" class="img-thumbnail" style="width:100%" alt="HTML5 Icon"></div>
+        <div class="panel-footer text-center">Interim Director - Production Manager Video/TV</div>
+      </div>
+    </div>
+  </div><br>
+</div><br>
+<footer class="navbar-default navbar-fixed-bottom">
+  <div class = "container text-center">
+    <a href="http://cem.mtsu.edu/main-staff-directory"><font color="black">Click to navigate to the center for educational media's staff directory for contact information.</font></a>
+  </div>
+</footer>
+</body>
+</html>
